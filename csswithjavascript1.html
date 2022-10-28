@@ -1,0 +1,10 @@
+<input type="range" min="0" max="100" id="slider" value="100"  onchange="changeOpacity()">
+<h1 id="main">Change my Opacity Dynamically</h1>
+<div id="opacityValue"></div>
+<script>
+    function changeOpacity(){
+        var value=parseInt(document.getElementById("slider").value);
+        document.getElementById("main").style.opacity=value/100;
+        document.getElementById("opacityValue").innerHTML="Opacity value: "+value/100;
+    }
+</script>

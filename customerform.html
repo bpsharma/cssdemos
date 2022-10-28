@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <style>
+        input {color:green}
+        #d1{color:white;background-color: blue;}
+        #b1 {background-color: aqua;}
+    </style>
+    <body>
+        <h1>Customer Form</h1>
+        <form action="savecustomer.jsp" method="post" enctype="multipart/form-data">
+            Name <input type="text" name="name" id="name"><br>
+            Gender <input type="radio" name="gender" value="Male">Male 
+            <input type="radio" name="gender" value=Female">Female <br>
+            Country <select name="country">
+                <option value="IN">India</option>
+                <option value="CH">China</option>
+            </select><br>
+            Item Image <input type="file" name="photo"><br>
+            Item Description <textarea rows="5" cols="20" name="desc" id="d1"></textarea><br>
+            <input type="checkbox" name="agree" value="agree">Agree with terms and conditons<br>
+            <input type="submit" value="Register" id="b1">
+        </form>
+    </body>
+</html>

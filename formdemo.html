@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Student Registration Form</title></head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <form action="streg.jsp" method="post" enctype="multipart/form-data">
+            User ID <input type="text" name="userid"><br>
+            Password <input type="password" name="password"><br>
+            Name <input type="text" name="name"><br>
+            Gender <input type="radio" value="Male" name="gender">Male 
+                    <input type="radio" value="Female" name="gender">Female<br>
+            Course <select name="course">
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </select><br>
+            Photo <input type="file"><br>
+            Family Details <textarea name='family' rows="5" cols="20"></textarea><br>
+            <input type="checkbox" value="agree"> Agree with terms and conditions<br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
